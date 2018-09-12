@@ -1,6 +1,6 @@
 {
     "name": "zzfly256/markdown-to-site",
-    "description": "A tool to build up website by instantly reading markdown files",
+    "description": "A tool to build up documents website by instantly reading markdown files",
     "type": "project",
     "require": {
         "erusev/parsedown": "^1.7"
