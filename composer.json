@@ -1,0 +1,15 @@
+{
+    "name": "zzfly256/markdown-to-site",
+    "description": "A tool to build up website by instantly reading markdown files",
+    "type": "project",
+    "require": {
+        "erusev/parsedown": "^1.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rytia",
+            "email": "admin@zzfly.net"
+        }
+    ]
+}
