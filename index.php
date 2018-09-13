@@ -14,11 +14,11 @@ $file = file($_GET['md']);
 $loc = '';
 foreach ($file as $line => $value){
     if (substr($value, 0, 1) == "#" AND substr_count($value, "#") <= 3) {
-        $title = str_replace([" ", "\t", "\n", "\r", "#"], '', $value);
+        $title = str_replace(["\t", "\n", "\r", "#"], '', $value);
         $size = explode(" ",$value);
 
-        $loc .= $size[0]." [".$title."](#".$title.")\n";
-        $file[$line] = "<span id='".$title."'>\n".$value."\n</span>";
+        $loc .= $size[0]." [".$title."](#".md5($title).")\n";
+        $file[$line] = "<span id='".md5($title)."'>\n".$value."\n</span>";
     }
 }
 
